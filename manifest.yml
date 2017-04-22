@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: qatar
+  host: qatar
+  disk_quota: 1024M
+  services:
+  - Qatar_DB
+  - availability-monitoring-auto
+  buildpack: python_buildpack
+  command: bash ./run.sh
